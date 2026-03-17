@@ -1,0 +1,300 @@
+html<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sester Brands — SS25</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">SESTER</div>
+    <div class="nav-links">
+      <div class="nav-link active" onclick="showPage('home', this)">Home</div>
+      <div class="nav-link" onclick="showPage('clothes', this)">Clothes</div>
+      <div class="nav-link" onclick="showPage('impressum', this)">Impressum</div>
+    </div>
+    <div class="nav-tag">SS25</div>
+  </nav>
+
+  <!-- TICKER BAND -->
+  <div class="ticker-wrap">
+    <div class="ticker" id="ticker"></div>
+  </div>
+
+  <!-- ==================== HOME ==================== -->
+  <div class="page active" id="page-home">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div>
+          <div class="hero-badge">Neue Kollektion — SS25</div>
+          <h1 class="hero-title">SES<br>TER<br><em>BRD</em></h1>
+          <p class="hero-desc">
+            Kein Kompromiss. Kein Mainstream.
+            Sester Brands ist für die, die verstehen —
+            bevor es alle tun.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="showPage('clothes', document.querySelectorAll('.nav-link')[1])">
+            Shop Now
+          </button>
+          <button class="btn-outline">Lookbook</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-img-top">
+          <div class="hero-img-num">01</div>
+          <img
+            src="images/zipper.jpg"
+            alt="Sester SS25"
+            class="hero-img hero-img-small"
+            onclick="openLightbox('images/zipper.jpg')"
+          />
+          <div class="hero-img-label">Sester / SS25 Drop 01</div>
+        </div>
+        <div class="hero-img-bot">
+          <div class="hero-img-num">02</div>
+          <img
+            src="images/zipper1.jpg"
+            alt="Sester Core Collection"
+            class="hero-img hero-img-small"
+            onclick="openLightbox('images/zipper1.jpg')"
+          />
+          <div class="hero-img-label">Sester / Core Collection</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE DIVIDER -->
+    <div class="marquee-div">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- FEATURED DROP -->
+    <section class="drop-section">
+      <div class="section-header">
+        <div class="section-label">Featured Drop</div>
+        <div class="section-meta">SS25 — Demnächst verfügbar</div>
+      </div>
+      <div class="drop-grid">
+
+        <div class="drop-card">
+          <div class="drop-card-bg"><div class="ph-small"></div></div>
+          <div class="drop-card-status">Soon</div>
+          <div class="drop-card-inner">
+            <div class="drop-card-tag">Outerwear</div>
+            <div class="drop-card-name">ZIPPER</div>
+            <div class="drop-card-price">— €</div>
+          </div>
+        </div>
+
+        <div class="drop-card">
+          <div class="drop-card-bg"><div class="ph-small"></div></div>
+          <div class="drop-card-status">Soon</div>
+          <div class="drop-card-inner">
+            <div class="drop-card-tag">Fleece</div>
+            <div class="drop-card-name">HEAVY HOODIE</div>
+            <div class="drop-card-price">— €</div>
+          </div>
+        </div>
+
+        <div class="drop-card">
+          <div class="drop-card-bg"><div class="ph-small"></div></div>
+          <div class="drop-card-status">Soon</div>
+          <div class="drop-card-inner">
+            <div class="drop-card-tag">Essential</div>
+            <div class="drop-card-name">OVERSIZED TEE</div>
+            <div class="drop-card-price">— €</div>
+          </div>
+        </div>
+
+        <div class="drop-card">
+          <div class="drop-card-bg"><div class="ph-small"></div></div>
+          <div class="drop-card-status">Soon</div>
+          <div class="drop-card-inner">
+            <div class="drop-card-tag">Outerwear</div>
+            <div class="drop-card-name">WIDE JACKET</div>
+            <div class="drop-card-price">— €</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOOKBOOK -->
+    <section class="lookbook-section">
+      <div class="lookbook-grid">
+        <div class="lb-main">
+          <div>
+            <div class="lb-main-label">SS25<br>LOOKBOOK</div>
+            <div class="lb-main-sub">Coming Soon — 2025</div>
+          </div>
+        </div>
+        <div class="lb-side">
+          <div class="lb-card">
+            <div class="lb-accent">A</div>
+            <div class="lb-card-name">Streets / Urban</div>
+          </div>
+          <div class="lb-card">
+            <div class="lb-accent">B</div>
+            <div class="lb-card-name">Minimal / Core</div>
+          </div>
+        </div>
+        <div class="lb-side">
+          <div class="lb-card">
+            <div class="lb-accent">C</div>
+            <div class="lb-card-name">Raw / Uncut</div>
+          </div>
+          <div class="lb-card">
+            <div class="lb-accent">D</div>
+            <div class="lb-card-name">Night / Mood</div>
+          </div>
+        </div>
+      </div>
+      <div class="lookbook-cta">
+        <div class="lookbook-cta-text">Lookbook erscheint mit der ersten Kollektion</div>
+        <button class="btn-outline sm">Notify Me</button>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <div>
+        <div class="nl-title">FIRST.<br>TO<br><span>KNOW.</span></div>
+        <p class="nl-sub">
+          Kein Spam. Nur Drops, Restocks und Releases —
+          bevor alle anderen es erfahren.
+        </p>
+      </div>
+      <div>
+        <div class="nl-form">
+          <input class="nl-input" type="text" placeholder="Dein Name" id="nl-name" />
+          <input class="nl-input" type="email" placeholder="Deine E-Mail" id="nl-email" />
+          <button class="nl-submit" onclick="submitNewsletter()">
+            Anmelden — Jetzt dabei sein
+          </button>
+          <div class="nl-note" id="nl-msg"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer-strip">
+      <div class="footer-copy">© 2025 Sester Brands — Alle Rechte vorbehalten</div>
+      <div class="footer-copy">Made in Germany</div>
+    </div>
+
+  </div>
+
+
+  <!-- ==================== CLOTHES ==================== -->
+  <div class="page" id="page-clothes">
+
+    <div class="clothes-header">
+      <h2 class="clothes-title">Clothes</h2>
+      <p class="clothes-sub">SS25 — Kollektion in Vorbereitung</p>
+      <div class="cat-nav">
+        <button class="cat-btn active" onclick="filterCat(this, 'jeans')">Jeans</button>
+        <button class="cat-btn" onclick="filterCat(this, 'hoodies')">Hoodies</button>
+        <button class="cat-btn" onclick="filterCat(this, 'zipper')">Zipper</button>
+        <button class="cat-btn" onclick="filterCat(this, 'tshirts')">T-Shirts</button>
+        <button class="cat-btn" onclick="filterCat(this, 'polos')">Polos</button>
+        <button class="cat-btn" onclick="filterCat(this, 'jackets')">Jackets</button>
+        <button class="cat-btn" onclick="filterCat(this, 'caps')">Caps</button>
+      </div>
+    </div>
+
+    <div class="product-grid-wrap">
+      <div class="product-grid-inner" id="product-grid"></div>
+    </div>
+
+    <div class="drop-soon">
+      <div class="ds-left">
+        <div class="ds-label">Nächster Drop</div>
+        <div class="ds-title">COMING SOON</div>
+      </div>
+      <div class="ds-right">SS25</div>
+    </div>
+
+  </div>
+
+
+  <!-- ==================== IMPRESSUM ==================== -->
+  <div class="page" id="page-impressum">
+    <div class="impressum-wrap">
+      <div class="imp-eyebrow">Legal</div>
+      <h2 class="imp-title">Impressum</h2>
+
+      <div class="imp-section">
+        <p class="imp-label">Angaben gemäß § 5 TMG</p>
+        <p class="imp-content">
+          Sester Brands<br>
+          Musterstraße 1<br>
+          12345 Musterstadt<br>
+          Deutschland
+        </p>
+      </div>
+      <div class="imp-divider"></div>
+
+      <div class="imp-section">
+        <p class="imp-label">Kontakt</p>
+        <p class="imp-content">
+          E-Mail: info@sesterbrands.de<br>
+          Telefon: +49 (0) 000 000 00 00
+        </p>
+      </div>
+      <div class="imp-divider"></div>
+
+      <div class="imp-section">
+        <p class="imp-label">Verantwortlich für den Inhalt</p>
+        <p class="imp-content">
+          Sester Brands<br>
+          Musterstraße 1<br>
+          12345 Musterstadt
+        </p>
+      </div>
+      <div class="imp-divider"></div>
+
+      <div class="imp-section">
+        <p class="imp-label">Haftungsausschluss</p>
+        <p class="imp-content">
+          Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt.
+          Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
+          können wir keine Gewähr übernehmen. Als Diensteanbieter sind wir
+          gemäß § 7 Abs. 1 TMG für eigene Inhalte nach den allgemeinen
+          Gesetzen verantwortlich.
+        </p>
+      </div>
+      <div class="imp-divider"></div>
+
+      <div class="imp-section">
+        <p class="imp-label">Urheberrecht</p>
+        <p class="imp-content">
+          Die durch die Seitenbetreiber erstellten Inhalte unterliegen dem
+          deutschen Urheberrecht.
+          © 2025 Sester Brands. Alle Rechte vorbehalten.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <img id="lightbox-img" src="" alt="Sester" />
+      <div class="lightbox-close" onclick="closeLightbox()">✕ schließen</div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
